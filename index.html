@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Ultahnya_Cindy</title>
+        
+        
+        
+            <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="one.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+     
+<style>
+    .button {
+      background-color: #4CAF50; /* Green */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+    
+    .button1 {
+      background-color: white; 
+      color: black; 
+      border: 2px solid rgb(0, 162, 255);
+    }
+  </style>    
+     
+     <style>
+      #overlay {
+        position: fixed;
+        display: none;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.884);
+        z-index: 2;
+        cursor: pointer;
+      }
+      
+      #text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 50px;
+        color: white;
+        transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+      }
+      </style>
+      <script>
+        function on() {
+          document.getElementById("overlay").style.display = "block";
+        }
+        
+        function off() {
+          document.getElementById("overlay").style.display = "none";
+        }
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+        
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+        
+              // Store hash
+              var hash = this.hash;
+        
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+           
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+        </script>
+        <style>
+        #section1 {
+          height: 800px;
+          background-color: rgba(255, 192, 203, 0);
+        }
+        
+        #section2 {
+          height: 400px;
+          background-image: linear-gradient( rgba(0, 195, 255, 0));        }
+        </style>
+    </head>
+    <body>
+        <div class="main" id="section1">
+      <div class="animated-title">
+          <div class="text-top">
+              <div>
+                  <span>Happy</span>
+                  <span>Birthday</span>
+              </div>
+          </div>
+          <div class="text-bottom">
+              <div>Cindy!!</div>
+          </div>
+      </div>
+      <br/><br/><br/><br/><br/><br/><br/>
+      <br/><br/><br/><br/><br/><br/><br/>
+      <br/><br/><br/><br/><br/><br/><br/>
+      <br/><br/><br/><br/><br/><br/>
+      <center>
+          <a href="#section2">
+            <div class="w3-container w3-center w3-animate-top">
+            <img src="pic.png">
+          </div></a>
+        </center>
+        </div>
+        
+        <div class="main" id="section2">
+          <h2>...</h2>
+          <br/><br/><br/><br/><br/><br/><br/>
+      <br/><br/><br/><br/><br/><br/><br/>
+          <h2>Buat yg lgi ulang tahun:</h2>
+        </div>
+
+        <p id="weirdtext">Semoga di umur loe yg baru ini semoga dapatmenjadi cindy yg lebih optimis, extrasemangat!,dan overstrong dari sebelumnya. Terus optimis dan tatap masa depan dengan penuh harapan</p>
+
+        <author>/God/bless</author>
+          <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+        
+            <script src="js/index.js"></script>
+
+
+      <div id="overlay" onclick="off()">
+        <div id="text">Wish You All The Best Cinn!!!</div>
+      </div>
+      
+      <div style="padding:20px">
+        <h2>LAST!</h2>
+        <button onclick="on()" class="button button1">Click This</button>
+      </div>
+      
+      
+    </body>
+    
+</html>
